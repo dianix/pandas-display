@@ -3,7 +3,6 @@ var origen = document.getElementById("boton-origen");
 var extincion = document.getElementById("boton-extincion");
 var restaurar = document.getElementById("boton-restaurar");
 
-var botones = document.getElementsByTagName("button");
 var parrafos = document.getElementsByTagName("p");
 
 function ocultarP1(){
@@ -30,6 +29,10 @@ function mostrarP2(){
     parrafos[1].style.visibility = "visible";
     botones[1].removeEventListener("click",mostrarP2);
     botones[1].addEventListener("click",ocultarP2);
+}
+
+function mostrarFotos(){
+    
 }
 
 
