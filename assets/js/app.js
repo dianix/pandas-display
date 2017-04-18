@@ -42,10 +42,12 @@ function identificarSpan(){
 }
 
 function ocultarFoto(boton){
-    console.log(boton);
-    /*var cajaImg = boton.parent;
-    cajaImg.style.display = "none";*/
+    var cajaImg = boton.parentNode;
+    console.log(cajaImg);
+    cajaImg.style.display = "none";
 }
+
+function restaurar
 
 for(var i=0; i<botonesImgs.length; i++){
     botonesImgs[i].addEventListener("click",identificarSpan);
