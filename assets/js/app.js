@@ -40,6 +40,7 @@ function identificarSpan(){
 
 function ocultarFoto(boton){
     var cajaImg = boton.parentNode;
+<<<<<<< HEAD
     cajaImg.style.display = "none";
 }
 
@@ -49,7 +50,13 @@ function restaurarImgs(){
     for(var i=0; i<imagencillas.length; i++){
         imagencillas[i].style.display = "inline-block";
     }
+=======
+    console.log(cajaImg);
+    cajaImg.style.display = "none";
+>>>>>>> 2c26afe029484796b75e0d63ba139a8ce2a8da5e
 }
+
+function restaurar
 
 for(var i=0; i<botonesImgs.length; i++){
     botonesImgs[i].addEventListener("click",identificarSpan);
