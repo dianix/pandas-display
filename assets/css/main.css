@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #1f1f1f;
+    background-color: #404040;
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -45,8 +45,15 @@ section {
     margin: 20px 20px 30px 0;
 }
 
+#fotos div span {
+    font-size: 30px;
+    line-height: 0;
+    color: #8b8b8b;
+}
+
 #fotos div span:hover {
     cursor: pointer; cursor: hand;
+    color: #9ae62f;
 }
 
 #fotos div img {
@@ -60,19 +67,24 @@ section {
 
 #textos div button {
     display: inline-block;
+    background-color: white;
     border-width: 0;
     width: 30%;
     padding: 5px;
     margin-right: 10px;
+    border-radius: 3px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color: #8b8b8b;
 }
 
 #textos div button:hover {
-    background-color: #8fb55a;
+    background-color: #9ae62f;
     color: white;
 }
 
 #textos div p {
-    display: inline-block;
+    float: left;
     width: 40%;
     height: 200px;
     color: white;
