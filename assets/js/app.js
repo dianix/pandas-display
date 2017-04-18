@@ -1,8 +1,6 @@
-/*
-var origen = document.getElementById("boton-origen");
-var extincion = document.getElementById("boton-extincion");
-var restaurar = document.getElementById("boton-restaurar");
-*/
+//chorromil intentos para commitear mi ejercicio y no lo logro T__T
+
+
 var botones = document.getElementsByTagName("button");
 var parrafos = document.getElementsByTagName("p");
 var botonesImgs = document.getElementsByTagName("span");
