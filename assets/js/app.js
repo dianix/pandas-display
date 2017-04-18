@@ -3,10 +3,10 @@ var origen = document.getElementById("boton-origen");
 var extincion = document.getElementById("boton-extincion");
 var restaurar = document.getElementById("boton-restaurar");
 */
-
 var botones = document.getElementsByTagName("button");
 var parrafos = document.getElementsByTagName("p");
 var botonesImgs = document.getElementsByTagName("span");
+var cajaImagenes = document.getElementById("fotos");
 
 function ocultarP1(){
     console.log(event);
@@ -35,16 +35,20 @@ function mostrarP2(){
 }
 
 function identificarSpan(){
-    //console.log(event);
-    console.log(this,botonesImgs);
-    ocultarFoto(this);
-    
+    ocultarFoto(this);    
 }
 
 function ocultarFoto(boton){
-    console.log(boton);
-    /*var cajaImg = boton.parent;
-    cajaImg.style.display = "none";*/
+    var cajaImg = boton.parentNode;
+    cajaImg.style.display = "none";
+}
+
+function restaurarImgs(){
+    //console.log(cajaImagenes.children);
+    var imagencillas = cajaImagenes.children;
+    for(var i=0; i<imagencillas.length; i++){
+        imagencillas[i].style.display = "inline-block";
+    }
 }
 
 for(var i=0; i<botonesImgs.length; i++){
@@ -53,5 +57,5 @@ for(var i=0; i<botonesImgs.length; i++){
 
 botones[0].addEventListener("click",ocultarP1);
 botones[1].addEventListener("click",ocultarP2);
-
+botones[2].addEventListener("click",restaurarImgs);
 
